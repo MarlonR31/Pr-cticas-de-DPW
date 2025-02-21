@@ -1,2 +1,2 @@
-# Pr-cticas-de-DPW
+# Practicas-de-DPW
 Practicas del CICLO 01 - 2025
