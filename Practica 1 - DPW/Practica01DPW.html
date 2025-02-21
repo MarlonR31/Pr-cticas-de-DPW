@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+        #alerta {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: white;
+          border: 1px solid gray;
+          padding: 20px;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <h1>BIENVENIDOS A MI VERIFICADOR DE EDAD</h1>
+    </header>
+
+    <main>
+        <div>
+            <h2>Ingrese su nombre: </h2> 
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"> 
+        </div>
+        <div>
+            <h2>Ingrese su edad: </h2>
+            <label for="nombre">Edad:</label>
+            <input type="number" id="edad">
+        </div>
+        <br> 
+        <div>
+            <button type="submit" onclick="mostrarResultado()">Enviar</button>
+        </div>
+        <div id="alerta" style="display: none; text-align: center;">
+            <p id="Resultado"></p>
+            <button onclick="ocultarAlerta()">Aceptar</button>
+        </div>
+    </main>
+
+    <script>
+        function mostrarResultado(){
+            let nombre = document.getElementById("nombre").value;
+            let edad = document.getElementById("edad").value;
+            if(edad >= 18)
+            {
+                document.getElementById("Resultado").innerHTML = `Hola ${nombre} <br>tu eres <h4>MAYOR DE EDAD</h4> con "${edad} años"`;
+                document.getElementById("alerta").style.display = "block";
+            }
+            else {
+                document.getElementById("Resultado").innerHTML = `Hola ${nombre}, <br>tu eres <h4>MENOR DE EDAD</h4> con "${edad} años"`;
+                document.getElementById("alerta").style.display = "block";
+            }  
+        }
+
+        function ocultarAlerta() {
+            document.getElementById("alerta").style.display = "none";
+        }
+    </script>
+</body>
+</html>
