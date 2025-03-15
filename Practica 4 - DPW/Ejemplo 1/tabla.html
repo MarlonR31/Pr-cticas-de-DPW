@@ -6,11 +6,44 @@
     <title>Ejemplo de Tabla HTML</title>
     <style>
         table{
-            margin: 10px;
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th{
+            background-color: blueviolet;
         }
     </style>
 </head>
 <body>
     <h2>Lista de Productos</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad en Stock</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>Teclado Mecanico</td>
+                <td>$25</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Monitor 24''</td>
+                <td>$150</td>
+                <td>10</td>
+            </tr>
+        <tbody>
+
+        </tbody>
+    </table>
 </body>
 </html>
