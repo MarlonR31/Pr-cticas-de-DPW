@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="Style.css">
+    <title>MODELO DE CAJAS CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios de Modelos de Caja en CSS</h1>
+        <p>El modelo de caja en CSS define cómo se estructuran los elementos en una página web. Cada elemento se considera una caja que consta de contenido, relleno (padding), borde y margen.</p>
+    </header>
+
+    <main>
+        <div class="Box1">
+            <h2>Caja 1</h2>
+            <h2>Variables en JavaScript</h2>
+            <p>Las variables en JavaScript se utilizan para almacenar datos. Pueden ser de tipo numérico, texto, etc.</p>
+            <p id="Nombre"></p>
+            <script>
+                let nombre = "Juan";
+                let edad = 30;
+                document.getElementById("Nombre").textContent = "Nombre: " + nombre + ", Edad: " + edad;
+            </script>
+        </div>
+
+        <div class="Box2">
+            <h2>Caja 2</h2>
+            <h2>Bucles en Python</h2>
+            <p>Los bucles permiten repetir un bloque de código varias veces. Ejemplo de un bucle 'for':</p>
+            <p id="bucleEjemplo"></p>
+            <script>
+                let mensaje = "";
+                for (let i = 0; i < 5; i++) {
+                    mensaje += "Iteración " + (i + 1) + "<br>";
+                }
+                document.getElementById("bucleEjemplo").innerHTML = mensaje;
+            </script>
+        </div>
+
+       <div class="Box3">
+            <h2>Caja 3</h2>
+            <h2>Consultas SQL</h2>
+            <p>SQL se utiliza para interactuar con bases de datos. Ejemplo de una consulta SELECT:</p>
+            <p><code>SELECT * FROM usuarios WHERE edad > 25;</code></p>
+            <p>Esta consulta selecciona todos los usuarios mayores de 25 años.</p>
+       </div> 
+    </main>
+    
+</body>
+</html>
