@@ -1,0 +1,52 @@
+body {
+    /* Estilo aplicado al cuerpo completo de la página */
+    background: linear-gradient(to right, #df5e2b, #f5c55c, #9523ac, #5f5cf5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#62f744 10%, transparent 10%),
+                        radial-gradient(#444cf7 10%, transparent 10%);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+}
+
+.container {
+    width: 100%;
+    height: 70%;
+    background-color: #ffffff;
+    background-image: radial-gradient(circle, rgb(241, 231, 212), transparent 20%, rgb(52, 248, 12));
+    background-image: radial-gradient(circle, rgb(0, 217, 255), transparent 20%, rgb(31, 34, 192));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(52, 225, 255);
+  }
+
+.card {
+    /* Clase '.card': representa una tarjeta o contenedor principal con contenido visualmente agrupado */
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-img {
+    /* Clase '.profile-img': imagen de perfil, normalmente circular y centrada sobre la tarjeta */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -50px;
+    border: 4px solid white;
+}
+
+.btn-custom {
+    /* Clase '.btn-custom': botón personalizado con colores específicos (por ejemplo, para acciones como 'seguir', 'editar', etc.) */
+    background-color: #3db35d;
+    border: none;
+    color: white;
+}
+
+.btn-custom:hover {
+    /* Estilo hover para '.btn-custom': cambia el color de fondo cuando el usuario pasa el cursor sobre el botón */
+    background-color: #298f4d;
+}
