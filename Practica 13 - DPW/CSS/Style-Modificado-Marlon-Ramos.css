@@ -1,0 +1,170 @@
+body {
+    background-color: #7b4de4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    /* NUEVO: Dos cajas verticalmente */
+    flex-direction: column;
+    /* NUEVO: Añadido para dar espacio entre las dos cajas */
+    gap: 30px;
+}
+
+.margin {
+    /* MODIFICADO: Se agregó el margen a 80px según la instrucción 1 de la guia */
+    margin: 80px;
+    border: 2px dotted #fff;
+    padding: 60px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.margin::before {
+    content: "margin";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.border {
+    background-color: #9b85ff;
+    /* MODIFICADO: El borde se cambió a 10px solid red según la instrucción 2 de la guia*/
+    border: 10px solid red;
+    padding: 70px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.border::before {
+    content: "border";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.padding {
+    background-color: #ff6688;
+    /* MODIFICADO: El padding se cambió a 50px según la instrucción 3 de la guia*/
+    padding: 50px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.padding::before {
+    content: "padding";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.content {
+    /* MODIFICADO: El color de fondo según la instrucción 4 de la guia*/
+    background-color: #d3f9d8;
+    padding: 70px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    /* NUEVO: Color de texto cambiado para mejor legibilidad en fondo claro */
+    color: #333;
+}
+
+.content::before {
+    content: "content";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0;
+}
+
+/* NUEVO: Estilos para la segunda caja (Tarea 3) */
+.margin2 {
+    margin: 40px; /* Margen diferente */
+    border: 3px dashed lightblue; /* Borde diferente */
+    padding: 50px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.margin2::before {
+    content: "margin 2";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.border2 {
+    background-color: #a7e9af; /* Color de fondo diferente (verde suave) */
+    padding: 60px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.border2::before {
+    content: "border 2";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.padding2 {
+    background-color: #f7b2bd; /* Color de fondo diferente (rosa suave) */
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.padding2::before {
+    content: "padding 2";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.content2 {
+    background-color: #e0b0ff; /* Color de fondo diferente (morado claro) */
+    padding: 60px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: relative;
+    color: #333; /* Color de texto para mejor legibilidad */
+}
+
+.content2::before {
+    content: "content 2";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    opacity: 0;
+}
